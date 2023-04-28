@@ -1,0 +1,27 @@
+
+
+<canvas id="reactive-bg-canvas"></canvas>
+<script>
+$(document).ready(function() {
+ // executes when HTML-Document is loaded and DOM is ready
+ //alert("document is ready");
+ random_move();
+});
+    </script>
+
+<script src="/particle/TweenLite.min.js"></script>
+<script src="/particle/magic-canvas.js"></script>
+<script>
+
+    function random_move () {
+        $.magicCanvas.draw({
+            type:"random-move",
+            rgb : function (circlePos) {
+                var px = circlePos.x;
+                var py = circlePos.y;
+                // do some computation....
+                return {r:parseInt(px % 255),g:parseInt(py % 255),b:203};
+            }
+        })
+    };
+</script>

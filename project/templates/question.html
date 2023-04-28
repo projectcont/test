@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{%  if (step==step)    -%}
+<p>{{  user }}  </p>
+<p>{{ result_text }}  </p>
+
+<h1>{{  title}} {{step}} </h1>
+
+ <div class="question">{{question| safe}} </div>
+
+<form method="post">
+
+    <input id="a" type="radio" name="ans" value="a" required>
+    <label for="a">(a)</label>
+
+    <input id="b" type="radio" name="ans" value="b" required>
+    <label for="b">(б)</label>
+
+    <input type="hidden" name="step" value="{{step}}">
+    <br/>    <input type="submit" value="ПРИМЕНИТЬ ">
+  </form>
+
+{%  endif  -%}
+
+
+
+{% endblock %}

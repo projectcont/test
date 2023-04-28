@@ -1,0 +1,104 @@
+
+html *, html {font-family: Tahoma,Verdana,Segoe,sans-serif; overflow-x:hidden}
+html {width:100%; background-color:#0e477c}
+
+div.wrapper
+{ border:0px solid brown ; display: flex;  flex-direction: row;  height: 100vh;
+align-items: center;  flex-wrap: wrap;  justify-content:space-between;  align-content: center;
+align-items: start;margin:auto;min-height:600px;
+ }
+
+
+
+div.center  { border:0px solid #fff ; width:700px;  margin:auto; background-color:#afcef3;  }
+div.wrapper form  {width:100%;  margin:30px auto 0  auto ;  text-align:center }
+div.wrapper form label { font-size:36px; line-height:40px;margin-right:30px}
+
+div.wrapper form p  {margin:10px 50px; }
+
+div.center p  {font-size:14px; text-align:center; }
+#loginform p  {font-size:24px; overflow:hidden}
+
+
+
+div.wrapper form input[type=radio]
+{ font-size:20px; height:20px; width:20px; height:20px; text-align:center;
+ cursor:pointer; text-align:center;  margin:auto;  }
+
+ div.wrapper  input[type=radio]
+ {
+  appearance: none;
+  border:3px solid yellow;
+  -webkit-appearance: none;
+  height:120px; width:120px;
+  border-radius: 50%;
+background: #fff;
+  font-size:120px;
+  border: 0px solid #1762a9;
+  box-shadow: 0 0 0 0px #1762a9;
+   accent-color: yellow;
+   outline: 5px solid #0a499d;
+}
+div.wrapper  input[type=radio]:checked {background: green;}
+
+
+
+div.wrapper form input[type=submit]
+{width:350px; height:50px;margin:30px auto ;
+text-align:center;cursor:pointer;
+background-color:#141677; color:#fff;
+border:3px outset #141677;
+font-size:19px;line-height:26px;
+}
+
+div.wrapper form input[type=submit]:hover {background-color:#1f65a7}
+
+
+
+div.wrapper form input[type=text] {width:70%; margin:auto; height:50px; line-height:50px}
+div.wrapper form * {text-align:center;}
+div.question  {margin:0px auto 30px auto; width:100%; text-align:center; font-size:19px;line-height:26px; border:0px solid green }
+
+h1, h2, h3, h4   { text-align:center;  margin:0px auto; padding:10px 0 }
+h1  { font-size:26px; line-height:30px; padding-top:30px}
+h2  { font-size:26px;height:30px; line-height:46px}
+h2  { margin:0px auto; padding:0px 0; }
+h5  { margin:0px auto; padding:0px 0; font-size:17px; line-height:20px }
+h6  { margin:20px auto 0px auto; padding:0px 0; font-size:15px; line-height:20px; width:90% }
+
+div.notice {border:2px solid #fff; width:60%; font-size:20px; line-height:26px; margin:30px auto; text-align:center;}
+p.performed {color:#0c582c; font-weight:800}
+
+div.wrapper form select {margin:auto}
+div.wrapper form select,  select option  { width:60%; font-size:20px; line-height:26px; text-align:left;}
+
+#author *, #author {color:#205611; text-align:center;margin:auto }
+
+@media (max-width: 2700px) and (orientation: portrait) {
+
+        #author * {display:inline}
+
+
+        div.center {width:80%;  margin:auto; margin-top:60px; text-align:center;   }
+        div.question, h1, h2, h3, h4,h5, p div.center p,div.wrapper form#loginform input[type=text]
+             { font-size:36px; line-height:40px; border:2px solid #357fc6; }
+        div.wrapper div.question      { font-size:46px; line-height:80px; border:none; margin:50px 0}
+        h1 { font-size:56px; line-height:60px;}
+        h6 { font-size:26px; line-height:30px; font-weight:400}
+        div.wrapper form input[type=submit] { overflow:hidden;font-size:46px; line-height:90px; height:90px; width:70%; margin-top:90px}
+        div.wrapper p { font-size:36px; line-height:40px; }
+        form label { font-size:56px; line-height:70px;}
+
+        h6, div.wrapper p, div.wrapper form input[type=submit],div.wrapper div.question
+        { font-size:1rem; line-height:20px; font-weight:400}
+
+        h1  { font-size:30px; line-height:40px; font-weight:400}
+        div.wrapper form input[type=submit] {  line-height:90px; height:90px; width:80%; margin-top:50px; overflow:hidden}
+        div.wrapper div.question      { line-height:30px; border:none; margin:50px 0}
+
+         html,  body { overflow:hidden }
+
+
+
+
+}

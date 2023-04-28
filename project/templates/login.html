@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{%  if (step==step)    -%}
+<h6>{{  title}}  </h6>
+<form method="post" id="loginform">
+    <p>Ваше имя </p>
+   <div> <input type="text" name="name"  required ></div>
+      <p>Ваш email </p>
+  <div>  <input type="text" name="email"  required ></div>
+
+     <input type="hidden" name="step_" value="0">
+
+
+
+    <input type="submit"type="text" value="ПРИМЕНИТЬ ">
+  </form>
+
+<div style="z-index:1000;  " id="author" >  Разработка: Константин Бограчев
+        <a  style="z-index:1000; " href=" https://comp-line.ru/"> https://comp-line.ru/ </a> </div>
+
+{%  endif  -%}
+{% endblock %}
